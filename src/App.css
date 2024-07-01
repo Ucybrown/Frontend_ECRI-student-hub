@@ -1,0 +1,66 @@
+/* App.css */
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Mobile first styles */
+.container {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar ul li {
+  margin: 10px 0;
+}
+
+/* Top navigation styles */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Flexbox layout for large screens */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .top-nav {
+    flex-direction: row;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+}

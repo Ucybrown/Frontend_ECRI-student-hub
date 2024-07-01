@@ -1,0 +1,65 @@
+/* styles/SemesterPage.css */
+
+.semester-page {
+  background-color: #F0ECE2; /* Nude color */
+  padding: 20px;
+  min-height: calc(100vh - 100px); /* Subtract space taken by courses-buttons */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds viewport */
+}
+
+.button-link {
+  background-color: #4CAF50; /* Green */
+  color: white; /* Set text color to white */
+  padding: 20px 40px; /* Adjust padding as needed */
+  text-align: center;
+  text-decoration: none !important; /* Ensure links within buttons have no underline */
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px; /* Adjust margin as needed */
+  border-radius: 5px;
+  border: none;
+  width: 100%; /* Make button width 100% */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.button-link:hover {
+  background-color: #45a049; /* Darker green on hover */
+  color: white; /* Adjust text color on hover */
+}
+
+.courses-buttons {
+  display: flex;
+  flex-direction: column; /* Column layout */
+  align-items: center; /* Align items to the center */
+  position: fixed;
+  top: 100px; /* Adjust top position as needed */
+  left: 50%; /* Position from the center */
+  transform: translateX(-50%); /* Center horizontally */
+  width: 500px; /* Fixed width */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .button-link {
+    padding: 15px 30px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .courses-buttons {
+    top: 80px; /* Adjust top position for smaller screens */
+    width: 90%; /* Make the buttons take up most of the screen width */
+  }
+}
+
+@media (max-width: 576px) {
+  .button-link {
+    padding: 10px 20px; /* Further adjust padding for very small screens */
+    font-size: 12px; /* Adjust font size for very small screens */
+  }
+
+  .courses-buttons {
+    top: 60px; /* Further adjust top position for very small screens */
+    width: 95%; /* Make the buttons take up almost the entire screen width */
+  }
+}

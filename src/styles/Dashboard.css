@@ -1,0 +1,79 @@
+/* Dashboard.css */
+
+.mentor-section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* White background for better contrast */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for better separation */
+  }
+  
+  .mentor-section h3 {
+    margin-top: 0;
+    font-size: 1.5rem; /* Adjusted font size */
+    color: #333333; /* Darker text color */
+  }
+  
+  .mentor-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mentor-section li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Rounded corners */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mentor-section li span {
+    font-size: 1rem; /* Adjusted font size */
+    color: #555555; /* Medium text color */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .mentor-section {
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+  
+    .mentor-section h3 {
+      font-size: 1.25rem;
+    }
+  
+    .mentor-section li {
+      padding: 8px;
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    .mentor-section li span {
+      font-size: 0.9rem; /* Adjust font size */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .mentor-section {
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+  
+    .mentor-section h3 {
+      font-size: 1.1rem;
+    }
+  
+    .mentor-section li {
+      padding: 6px;
+    }
+  
+    .mentor-section li span {
+      font-size: 0.8rem; /* Further adjust font size */
+    }
+  }
+  

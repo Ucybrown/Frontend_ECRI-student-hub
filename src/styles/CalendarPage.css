@@ -1,0 +1,104 @@
+.calendar-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Adjust the margin for the selected date */
+  .selected-date {
+    margin-top: 20px;
+  }
+  
+  /* Center the calendar */
+  .react-calendar {
+    margin: 0 auto;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 1200px) {
+    :root {
+      --base-font-size: 15px;
+      --heading-font-size: 1.8rem;
+      --subheading-font-size: 1.1rem;
+      --button-font-size: 0.95rem;
+    }
+  
+    .calendar-page {
+      padding: 15px;
+    }
+  
+    .selected-date {
+      margin-top: 15px;
+      font-size: 0.9rem; /* Adjust font size */
+    }
+  
+    .react-calendar {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    :root {
+      --base-font-size: 14px;
+      --heading-font-size: 1.6rem;
+      --subheading-font-size: 1rem;
+      --button-font-size: 0.9rem;
+    }
+  
+    .calendar-page {
+      padding: 10px;
+    }
+  
+    .selected-date {
+      margin-top: 10px;
+      font-size: 0.8rem; /* Adjust font size */
+    }
+  
+    .react-calendar {
+      width: 95%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    :root {
+      --base-font-size: 13px;
+      --heading-font-size: 1.4rem;
+      --subheading-font-size: 0.9rem;
+      --button-font-size: 0.85rem;
+    }
+  
+    .calendar-page {
+      padding: 8px;
+    }
+  
+    .selected-date {
+      margin-top: 8px;
+      font-size: 0.7rem; /* Adjust font size */
+    }
+  
+    .react-calendar {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    :root {
+      --base-font-size: 12px;
+      --heading-font-size: 1.2rem;
+      --subheading-font-size: 0.8rem;
+      --button-font-size: 0.8rem;
+    }
+  
+    .calendar-page {
+      padding: 5px;
+    }
+  
+    .selected-date {
+      margin-top: 5px;
+      font-size: 0.6rem; /* Adjust font size */
+    }
+  
+    .react-calendar {
+      width: 100%;
+    }
+  }
+  

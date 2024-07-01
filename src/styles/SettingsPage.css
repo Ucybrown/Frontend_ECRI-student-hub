@@ -1,0 +1,98 @@
+/* styles/SettingsPage.css */
+
+.settings-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.settings-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.settings-page .form-group {
+  margin-bottom: 15px;
+}
+
+.settings-page .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.settings-page .form-group input[type="text"],
+.settings-page .form-group input[type="email"],
+.settings-page .form-group input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.settings-page .message {
+  text-align: center;
+  color: green;
+}
+
+.settings-page button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.settings-page button:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .settings-page {
+    padding: 15px; /* Adjust padding for smaller screens */
+    margin-top: 40px; /* Adjust top margin for smaller screens */
+  }
+
+  .settings-page h2 {
+    font-size: 1.5rem; /* Adjust heading font size */
+  }
+
+  .settings-page .form-group input[type="text"],
+  .settings-page .form-group input[type="email"],
+  .settings-page .form-group input[type="file"] {
+    padding: 6px; /* Adjust padding for form inputs */
+  }
+
+  .settings-page button {
+    padding: 8px; /* Adjust padding for button */
+    font-size: 1rem; /* Adjust font size for button */
+  }
+}
+
+@media (max-width: 576px) {
+  .settings-page {
+    padding: 10px; /* Further adjust padding for very small screens */
+    margin-top: 30px; /* Further adjust top margin for very small screens */
+  }
+
+  .settings-page h2 {
+    font-size: 1.2rem; /* Further adjust heading font size */
+  }
+
+  .settings-page .form-group input[type="text"],
+  .settings-page .form-group input[type="email"],
+  .settings-page .form-group input[type="file"] {
+    padding: 5px; /* Further adjust padding for form inputs */
+    font-size: 0.9rem; /* Adjust font size for form inputs */
+  }
+
+  .settings-page button {
+    padding: 7px; /* Further adjust padding for button */
+    font-size: 0.9rem; /* Adjust font size for button */
+  }
+}
+

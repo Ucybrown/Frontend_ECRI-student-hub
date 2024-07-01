@@ -1,0 +1,85 @@
+/* CreateMeeting.css */
+
+.create-meeting-container {
+  border: 1px solid #ccc;
+  background-color: #B2BEB5;
+  border-radius: 5px;
+  padding: 40px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Vertical space between elements */
+  align-items: center; /* Center align items horizontally */
+}
+
+.create-meeting-container form {
+  width: 100%; /* Ensure the form takes full width inside the container */
+}
+
+.create-meeting-container form > div {
+  margin-bottom: 20px; /* Space between input fields */
+}
+
+.create-meeting-container button {
+  margin-top: 20px; /* Space above the button */
+}
+
+.error-popup {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.error-popup .fa-exclamation-circle {
+  margin-right: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .create-meeting-container {
+    padding: 20px; /* Adjust padding */
+    margin-top: 60px; /* Adjust top margin */
+  }
+
+  .create-meeting-container form > div {
+    margin-bottom: 15px; /* Adjust space between input fields */
+  }
+
+  .create-meeting-container button {
+    margin-top: 15px; /* Adjust space above the button */
+  }
+}
+
+@media (max-width: 576px) {
+  .create-meeting-container {
+    padding: 15px; /* Further adjust padding */
+    margin-top: 40px; /* Further adjust top margin */
+  }
+
+  .create-meeting-container form > div {
+    margin-bottom: 10px; /* Further adjust space between input fields */
+  }
+
+  .create-meeting-container button {
+    margin-top: 10px; /* Further adjust space above the button */
+  }
+
+  .error-popup {
+    padding: 8px; /* Adjust padding */
+    margin-top: 8px; /* Adjust margin */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .error-popup .fa-exclamation-circle {
+    margin-right: 8px; /* Adjust margin */
+  }
+}
+
